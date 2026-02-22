@@ -1,0 +1,188 @@
+{
+  "identity": {
+    "name": "Cubic Logistics",
+    "tone": "Premium Industrial",
+    "description": "A high-end, reliable logistics partner. The design fuses the weight of physical infrastructure with the precision of modern data.",
+    "keywords": ["Reliability", "Precision", "Global Scale", "Industrial Luxury"]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"Oswald\", sans-serif",
+      "body": "\"Manrope\", sans-serif",
+      "mono": "\"JetBrains Mono\", monospace"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+    ],
+    "usage": {
+      "h1": "font-heading font-bold text-5xl md:text-7xl uppercase tracking-tight text-foreground",
+      "h2": "font-heading font-semibold text-4xl md:text-5xl uppercase tracking-tight text-foreground/90",
+      "h3": "font-heading font-medium text-2xl md:text-3xl uppercase tracking-normal text-foreground/80",
+      "body": "font-body text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "font-mono text-xs uppercase tracking-widest text-muted-foreground/70"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "hex": "#C9A961",
+        "name": "Cubic Gold",
+        "usage": "CTAs, Accents, Highlights, Borders"
+      },
+      "secondary": {
+        "hex": "#1A1A1A",
+        "name": "Deep Charcoal",
+        "usage": "Headings, Dark Backgrounds, Footers"
+      },
+      "background": {
+        "light": "#FFFFFF",
+        "dark": "#0A0A0A"
+      },
+      "surface": {
+        "light": "#F4F4F5",
+        "dark": "#18181B"
+      }
+    },
+    "tailwind_vars": {
+      "light": {
+        "--background": "0 0% 100%",
+        "--foreground": "0 0% 10%",
+        "--card": "0 0% 100%",
+        "--card-foreground": "0 0% 10%",
+        "--popover": "0 0% 100%",
+        "--popover-foreground": "0 0% 10%",
+        "--primary": "42 49% 58%",
+        "--primary-foreground": "0 0% 10%",
+        "--secondary": "0 0% 10%",
+        "--secondary-foreground": "42 49% 58%",
+        "--muted": "240 4.8% 95.9%",
+        "--muted-foreground": "240 3.8% 46.1%",
+        "--accent": "42 49% 58%",
+        "--accent-foreground": "0 0% 10%",
+        "--destructive": "0 84.2% 60.2%",
+        "--destructive-foreground": "0 0% 98%",
+        "--border": "240 5.9% 90%",
+        "--input": "240 5.9% 90%",
+        "--ring": "42 49% 58%",
+        "--radius": "0rem"
+      },
+      "dark": {
+        "--background": "0 0% 5%",
+        "--foreground": "0 0% 98%",
+        "--card": "0 0% 8%",
+        "--card-foreground": "0 0% 98%",
+        "--popover": "0 0% 8%",
+        "--popover-foreground": "0 0% 98%",
+        "--primary": "42 49% 58%",
+        "--primary-foreground": "0 0% 10%",
+        "--secondary": "0 0% 98%",
+        "--secondary-foreground": "0 0% 9%",
+        "--muted": "0 0% 15%",
+        "--muted-foreground": "240 5% 64.9%",
+        "--accent": "42 49% 58%",
+        "--accent-foreground": "0 0% 10%",
+        "--destructive": "0 62.8% 30.6%",
+        "--destructive-foreground": "0 0% 98%",
+        "--border": "0 0% 20%",
+        "--input": "0 0% 20%",
+        "--ring": "42 49% 58%"
+      }
+    }
+  },
+  "layout": {
+    "container": "container mx-auto px-4 md:px-8 max-w-7xl",
+    "section_spacing": "py-20 md:py-32",
+    "grid_gap": "gap-8 md:gap-12",
+    "border_radius": "rounded-none",
+    "strategies": {
+      "bento_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[minmax(200px,auto)]",
+      "asymmetry": "Use offset layouts where image takes 5 cols and text takes 7 cols (or vice versa) to create tension."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 font-heading uppercase tracking-wide rounded-none px-8 py-6 h-auto text-lg transition-all duration-300 ease-out hover:tracking-widest",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading uppercase tracking-wide rounded-none px-8 py-6 h-auto text-lg border border-secondary",
+      "outline": "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-heading uppercase tracking-wide rounded-none px-8 py-6 h-auto transition-all"
+    },
+    "cards": {
+      "style": "bg-card border border-border/40 hover:border-primary/50 transition-colors duration-500 rounded-none p-8 flex flex-col gap-4 group relative overflow-hidden",
+      "hover_effect": "Add a subtle 'primary' colored glow or line that appears on hover."
+    },
+    "inputs": {
+      "style": "bg-background border-b-2 border-border focus:border-primary px-0 py-4 rounded-none transition-all placeholder:text-muted-foreground/50 focus:ring-0"
+    }
+  },
+  "images": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_85bb121a-3f20-45aa-803a-fae73f9861da/artifacts/x44xp81u_UPD%20LOGO.PNG",
+    "hero_bg": [
+      {
+        "url": "https://images.unsplash.com/photo-1768463852099-49f2db7d7c8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MHx8fHwxNzcxNzQ5Mjc4fDA&ixlib=rb-4.1.0&q=85",
+        "desc": "Truck on highway dusk",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1621862681400-a2a7321dc1c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxjb250YWluZXIlMjBzaGlwJTIwb2NlYW4lMjBjYXJnb3xlbnwwfHx8fDE3NzE3NDkyODB8MA&ixlib=rb-4.1.0&q=85",
+        "desc": "Container ship ocean",
+        "category": "hero_alternate"
+      }
+    ],
+    "services": [
+      {
+        "url": "https://images.unsplash.com/photo-1766561993246-c021a9110166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MHx8fHwxNzcxNzQ5Mjc4fDA&ixlib=rb-4.1.0&q=85",
+        "desc": "White truck driving",
+        "category": "transportation"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1739204618173-3e89def7140f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxsYXJnZSUyMGNsZWFuJTIwd2FyZWhvdXNlJTIwaW50ZXJpb3IlMjBzaGVsdmVzfGVufDB8fHx8MTc3MTc0OTI3OXww&ixlib=rb-4.1.0&q=85",
+        "desc": "Warehouse pallets",
+        "category": "warehousing"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1624695/pexels-photo-1624695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "desc": "Port cranes containers",
+        "category": "supply_chain"
+      }
+    ],
+    "about": [
+      {
+        "url": "https://images.unsplash.com/photo-1764690690771-b4522d66b433?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB0ZWFtJTIwbWVldGluZyUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NzE3NDkyODF8MA&ixlib=rb-4.1.0&q=85",
+        "desc": "Team meeting",
+        "category": "team"
+      }
+    ]
+  },
+  "content": {
+    "contact_info": {
+      "address": "12/2, Munusamy Kovil Street, Menamedu Main Road, Ambattur, Chennai, Tamil Nadu - 600053",
+      "phone": "+91 7604848540",
+      "email": "admin@cubiclogistics.net"
+    },
+    "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.002829285744!2d80.1576449!3d13.1166667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263a2a7a7a7a7%3A0x0!2zMTPCsDA3JzAwLjAiTiA4MMKwMDknMjcuNSJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+  },
+  "visual_enhancers": {
+    "overlays": "Use a subtle grain texture overlay (opacity 0.05) on solid colors to give an 'industrial paper' feel.",
+    "icons": "Use 'Lucide React' with 'stroke-1' for a thin, technical look.",
+    "borders": "Use 'border-l-4' (left border 4px) in Gold for key cards to simulate folders/files."
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE tailwind.config.js with the colors and fonts specified.",
+    "2. ADD the font imports to index.css or index.html immediately.",
+    "3. IMPLEMENT 'Layout' component that includes the Sticky Header and Heavy Footer.",
+    "4. USE the 'image_urls' provided for specific sections.",
+    "5. FORMS: Use Shadcn Form components but style them with the 'inputs' style defined above (bottom border only, no box).",
+    "6. MAP: Use the provided embed URL in an iframe for the Contact page.",
+    "7. QUOTE: Ensure the form collects necessary logistics data (Origin, Destination, Weight, Type) and simulates sending to admin@cubiclogistics.net.",
+    "8. THEME: Default to LIGHT mode but build with dark mode capabilities using the variables provided.",
+    "9. DATA-TESTID: Add data-testid to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "You tend to converge toward generic outputs. Avoid this.",
+    "Create depth through layered design elements.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Every interaction needs micro-animations.",
+    "Use sonner for toasts.",
+    "Components MUST use named exports.",
+    "Pages MUST use default exports."
+  ]
+}
