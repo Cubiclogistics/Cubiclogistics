@@ -2,19 +2,34 @@ import { Truck, Globe, Warehouse, Package, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
+  const fleetTypes = [
+    { type: 'Tata Ace / Dost', capacity: '750 kg - 1.5 Ton', size: '7-8 feet' },
+    { type: 'Pickup / Chhota Hathi', capacity: '1.5 - 2 Ton', size: '8-10 feet' },
+    { type: '407 / Taurus', capacity: '2.5 - 3.5 Ton', size: '12-14 feet' },
+    { type: 'LCV (Light Commercial Vehicle)', capacity: '4 - 5 Ton', size: '14-17 feet' },
+    { type: 'MCV (Medium Commercial Vehicle)', capacity: '7 - 9 Ton', size: '17-19 feet' },
+    { type: 'ICV (Intermediate Commercial Vehicle)', capacity: '9 - 12 Ton', size: '19-20 feet' },
+    { type: 'SCV (Small Container Vehicle)', capacity: '12 - 15 Ton', size: '20-24 feet' },
+    { type: 'Multi-Axle Truck', capacity: '15 - 25 Ton', size: '24-32 feet' },
+    { type: 'Trailer / Container', capacity: '25 - 32 Ton', size: '32-40 feet' },
+  ];
+
   const services = [
     {
       icon: <Truck size={56} strokeWidth={1} />,
       title: 'Transportation',
-      description: 'Comprehensive transportation solutions for all your cargo needs across multiple modes.',
+      subtitle: 'FTL Services Across India',
+      description: 'Full Truck Load (FTL) services covering all major cities and routes across India with our diverse fleet of vehicles in all sizes.',
       features: [
-        'Road Freight - Domestic trucking services',
-        'Air Freight - Express air cargo delivery',
-        'Sea Freight - International ocean shipping',
-        'Multi-modal Transport - Combined logistics solutions',
-        'Express Delivery - Time-sensitive shipments',
+        'Pan-India Coverage - All major cities & industrial hubs',
+        'Full Truck Load (FTL) - Dedicated vehicle for your cargo',
+        'Part Truck Load (PTL) - Cost-effective shared solutions',
+        'Express Delivery - Time-critical shipments',
+        'Temperature Controlled - Reefer trucks for sensitive cargo',
+        'GPS Tracking - Real-time shipment monitoring',
       ],
       image: 'https://images.unsplash.com/photo-1766561993246-c021a9110166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MHx8fHwxNzcxNzQ5Mjc4fDA&ixlib=rb-4.1.0&q=85',
+      hasFleet: true,
     },
     {
       icon: <Globe size={56} strokeWidth={1} />,
