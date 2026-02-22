@@ -77,7 +77,7 @@ export const Layout = ({ children }) => {
                   onClick={() => setMobileMenuOpen(false)}
                   data-testid={`mobile-nav-link-${link.name.toLowerCase()}`}
                   className={`block py-3 font-heading uppercase tracking-wide text-sm transition-colors ${
-                    isActive(link.path) ? 'text-primary' : 'text-white hover:text-primary'
+                    isActive(link.path) ? 'text-primary' : 'text-secondary hover:text-primary'
                   }`}
                 >
                   {link.name}
