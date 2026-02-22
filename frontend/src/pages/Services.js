@@ -28,7 +28,7 @@ export default function Services() {
         'GPS Tracking - Real-time shipment monitoring',
         'Door-to-Door Service - Complete logistics solutions',
       ],
-      image: 'https://images.unsplash.com/photo-1681004478577-cb7f8421f78c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHx0cnVjayUyMGhpZ2h3YXklMjB0cmFuc3BvcnQlMjBjYXJnbyUyMHZlaGljbGUlMjByb2FkJTIwSW5kaWElMjBsb2dpc3RpY3MlMjBubyUyMGJyYW5kaW5nfGVufDB8fHx8MTc3MTc1MjU2NHww&ixlib=rb-4.1.0&q=85',
+      image: 'https://customer-assets.emergentagent.com/job_cubic-shipping/artifacts/b2iegasu_WhatsApp%20Image%202026-02-22%20at%2015.04.04.jpeg',
       hasFleet: true,
     },
     {
