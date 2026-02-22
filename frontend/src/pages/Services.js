@@ -1,4 +1,4 @@
-import { Truck, Globe, Warehouse, Package, ArrowRight } from 'lucide-react';
+import { Truck, Globe, Warehouse, Package, ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
