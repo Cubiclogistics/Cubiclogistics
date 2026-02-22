@@ -19,7 +19,7 @@ export const Layout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-secondary border-b-4 border-primary">
+      <header className="sticky top-0 z-50 bg-white border-b-4 border-primary">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
