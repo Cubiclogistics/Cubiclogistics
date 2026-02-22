@@ -23,10 +23,10 @@ export default function Services() {
       features: [
         'Pan-India Coverage - All major cities & industrial hubs',
         'Full Truck Load (FTL) - Dedicated vehicle for your cargo',
-        'Part Truck Load (PTL) - Cost-effective shared solutions',
         'Express Delivery - Time-critical shipments',
         'Temperature Controlled - Reefer trucks for sensitive cargo',
         'GPS Tracking - Real-time shipment monitoring',
+        'Door-to-Door Service - Complete logistics solutions',
       ],
       image: 'https://images.unsplash.com/photo-1766561993246-c021a9110166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MHx8fHwxNzcxNzQ5Mjc4fDA&ixlib=rb-4.1.0&q=85',
       hasFleet: true,
