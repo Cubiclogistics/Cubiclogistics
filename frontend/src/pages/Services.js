@@ -28,7 +28,7 @@ export default function Services() {
         'GPS Tracking - Real-time shipment monitoring',
         'Door-to-Door Service - Complete logistics solutions',
       ],
-      image: 'https://images.unsplash.com/photo-1765571394962-c8d03a8d0ef5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB0cnVja3MlMjBmbGVldCUyMHRyYW5zcG9ydCUyMHZlaGljbGVzJTIwaGlnaHdheSUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3NzE3NTI0MTN8MA&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1681004478577-cb7f8421f78c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHx0cnVjayUyMGhpZ2h3YXklMjB0cmFuc3BvcnQlMjBjYXJnbyUyMHZlaGljbGUlMjByb2FkJTIwSW5kaWElMjBsb2dpc3RpY3MlMjBubyUyMGJyYW5kaW5nfGVufDB8fHx8MTc3MTc1MjU2NHww&ixlib=rb-4.1.0&q=85',
       hasFleet: true,
     },
     {
