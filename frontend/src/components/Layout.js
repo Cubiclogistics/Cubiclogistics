@@ -35,7 +35,7 @@ export const Layout = ({ children }) => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-12">
+            <nav className="hidden lg:flex items-center space-x-16">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
