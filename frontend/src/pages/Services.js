@@ -100,37 +100,93 @@ export default function Services() {
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
           <div className="space-y-24">
             {services.map((service, index) => (
-              <div
-                key={index}
-                data-testid={`service-detail-${index}`}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:grid-flow-dense' : ''
-                }`}
-              >
-                <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <div className="text-primary mb-6">{service.icon}</div>
-                  <h2 className="font-heading font-semibold text-4xl md:text-5xl uppercase tracking-tight text-foreground/90 mb-4">
-                    {service.title}
-                  </h2>
-                  <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground mb-6">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-start space-x-3">
-                        <ArrowRight size={20} className="text-primary flex-shrink-0 mt-1" />
-                        <span className="font-body text-base text-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <div key={index}>
+                <div
+                  data-testid={`service-detail-${index}`}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                    index % 2 === 1 ? 'lg:grid-flow-dense' : ''
+                  }`}
+                >
+                  <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
+                    <div className="text-primary mb-6">{service.icon}</div>
+                    {service.subtitle && (
+                      <p className="font-mono text-xs uppercase tracking-widest text-primary mb-2">{service.subtitle}</p>
+                    )}
+                    <h2 className="font-heading font-semibold text-4xl md:text-5xl uppercase tracking-tight text-foreground/90 mb-4">
+                      {service.title}
+                    </h2>
+                    <p className="font-body text-base md:text-lg leading-relaxed text-muted-foreground mb-6">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-3">
+                      {service.features.map((feature, fIndex) => (
+                        <li key={fIndex} className="flex items-start space-x-3">
+                          <ArrowRight size={20} className="text-primary flex-shrink-0 mt-1" />
+                          <span className="font-body text-base text-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className={`relative h-96 lg:h-[500px] ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover border-l-4 border-primary"
+                    />
+                  </div>
                 </div>
-                <div className={`relative h-96 lg:h-[500px] ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover border-l-4 border-primary"
-                  />
-                </div>
+
+                {/* Fleet Types Section - Only for Transportation */}
+                {service.hasFleet && (
+                  <div className="mt-16" data-testid="fleet-types-section">
+                    <div className="bg-muted p-8 md:p-12">
+                      <div className="text-center mb-12">
+                        <p className="font-mono text-xs uppercase tracking-widest text-primary mb-4">Our Fleet</p>
+                        <h3 className="font-heading font-semibold text-3xl md:text-4xl uppercase tracking-tight text-foreground/90 mb-4">
+                          Available Vehicle Types
+                        </h3>
+                        <p className="font-body text-base text-muted-foreground max-w-3xl mx-auto">
+                          Choose from our extensive fleet of vehicles suitable for all types of cargo. From small parcels to heavy machinery, we have the right vehicle for your needs.
+                        </p>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {fleetTypes.map((fleet, fleetIndex) => (
+                          <div
+                            key={fleetIndex}
+                            data-testid={`fleet-card-${fleetIndex}`}
+                            className="bg-background border-l-4 border-primary p-6 hover:shadow-lg transition-all duration-300"
+                          >
+                            <div className="flex items-start space-x-3 mb-3">
+                              <Truck size={24} className="text-primary flex-shrink-0" strokeWidth={1.5} />
+                              <h4 className="font-heading text-lg uppercase text-foreground">{fleet.type}</h4>
+                            </div>
+                            <div className="space-y-2 ml-9">
+                              <div className="flex items-center justify-between">
+                                <span className="font-body text-sm text-muted-foreground">Capacity:</span>
+                                <span className="font-body text-sm font-semibold text-foreground">{fleet.capacity}</span>
+                              </div>
+                              <div className="flex items-center justify-between">
+                                <span className="font-body text-sm text-muted-foreground">Size:</span>
+                                <span className="font-body text-sm font-semibold text-foreground">{fleet.size}</span>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="mt-12 text-center">
+                        <Link
+                          to="/quote"
+                          data-testid="fleet-get-quote-btn"
+                          className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 font-heading uppercase tracking-wide px-8 py-4 text-base transition-all duration-300 hover:tracking-widest"
+                        >
+                          Get a Quote for Your Transport Needs
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
