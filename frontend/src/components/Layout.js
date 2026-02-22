@@ -42,7 +42,7 @@ export const Layout = ({ children }) => {
                   to={link.path}
                   data-testid={`nav-link-${link.name.toLowerCase()}`}
                   className={`font-heading uppercase tracking-wide text-sm transition-all duration-300 hover:text-primary ${
-                    isActive(link.path) ? 'text-primary border-b-2 border-primary' : 'text-white border-b-2 border-transparent'
+                    isActive(link.path) ? 'text-primary border-b-2 border-primary' : 'text-secondary border-b-2 border-transparent'
                   }`}
                 >
                   {link.name}
