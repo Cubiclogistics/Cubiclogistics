@@ -55,7 +55,7 @@ export default function Services() {
         'Distribution Network - Strategic locations',
         'Cross-docking - Direct transfer services',
       ],
-      image: 'https://images.unsplash.com/photo-1739204618173-3e89def7140f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxsYXJnZSUyMGNsZWFuJTIwd2FyZWhvdXNlJTIwaW50ZXJpb3IlMjBzaGVsdmVzfGVufDB8fHx8MTc3MTc0OTI3OXww&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1585652516863-fbc02c1c206e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxOSEFJJTIwaGlnaHdheSUyMEluZGlhJTIwZXhwcmVzc3dheSUyMG1vZGVybiUyMHJvYWQlMjBpbmZyYXN0cnVjdHVyZXxlbnwwfHx8fDE3NzE3NTE3NTZ8MA&ixlib=rb-4.1.0&q=85',
     },
     {
       icon: <Package size={56} strokeWidth={1} />,
