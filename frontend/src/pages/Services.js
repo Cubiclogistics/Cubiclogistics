@@ -68,7 +68,7 @@ export default function Services() {
         'Real-time Tracking - GPS monitoring',
         'Consultation Services - Expert logistics advice',
       ],
-      image: 'https://images.unsplash.com/photo-1768463852099-49f2db7d7c8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MHx8fHwxNzcxNzQ5Mjc4fDA&ixlib=rb-4.1.0&q=85',
+      image: 'https://images.unsplash.com/photo-1554769944-3138b076c38a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHw0fHxsb2dpc3RpY3MlMjB0cmFuc3BvcnRhdGlvbiUyMG92ZXJ2aWV3JTIwY2FyZ28lMjBzaGlwcGluZyUyMHRydWNrcyUyMHdhcmVob3VzZSUyMGFlcmlhbCUyMHZpZXclMjBvcGVyYXRpb25zfGVufDB8fHx8MTc3MTc1MjA3N3ww&ixlib=rb-4.1.0&q=85',
     },
   ];
 
