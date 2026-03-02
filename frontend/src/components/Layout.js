@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
+import { WhatsAppButton } from './WhatsAppButton';
 
 export const Layout = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -98,6 +99,9 @@ export const Layout = ({ children }) => {
 
       {/* Main Content */}
       <main className="flex-grow">{children}</main>
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton />
 
       {/* Footer */}
       <footer className="bg-secondary text-white py-20">
