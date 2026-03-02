@@ -25,9 +25,9 @@ export const Layout = ({ children }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3" data-testid="header-logo">
               <img 
-                src="https://customer-assets.emergentagent.com/job_85bb121a-3f20-45aa-803a-fae73f9861da/artifacts/x44xp81u_UPD%20LOGO.PNG" 
+                src="https://customer-assets.emergentagent.com/job_cubic-shipping/artifacts/z1carl6q_Update%20the%20logo%20of%20Cgggg.png" 
                 alt="Cubic Logistics" 
-                className="h-12 w-auto"
+                className="h-14 w-auto"
               />
               <span className="font-heading text-xl md:text-2xl font-bold text-primary uppercase tracking-tight hidden sm:block">
                 Cubic Logistics
@@ -106,9 +106,9 @@ export const Layout = ({ children }) => {
             {/* Company Info */}
             <div>
               <img 
-                src="https://customer-assets.emergentagent.com/job_85bb121a-3f20-45aa-803a-fae73f9861da/artifacts/x44xp81u_UPD%20LOGO.PNG" 
+                src="https://customer-assets.emergentagent.com/job_cubic-shipping/artifacts/z1carl6q_Update%20the%20logo%20of%20Cgggg.png" 
                 alt="Cubic Logistics" 
-                className="h-16 w-auto mb-4"
+                className="h-20 w-auto mb-4"
               />
               <p className="font-body text-sm text-muted-foreground leading-relaxed">
                 Your Trusted Partner In Logistics
