@@ -111,7 +111,7 @@ export const Layout = ({ children }) => {
                 className="h-20 w-auto mb-4"
               />
               <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Your Trusted Partner In Logistics
+                "Powered by Speed, Driven by Care"
               </p>
             </div>
 
