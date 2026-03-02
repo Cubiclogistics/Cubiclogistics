@@ -6,7 +6,7 @@ export default function Home() {
     {
       icon: <Truck size={40} strokeWidth={1} />,
       title: 'Transportation',
-      description: 'Reliable road, air, and sea freight solutions for timely delivery of your cargo.',
+      description: 'FTL, PTL & ODC services - Comprehensive transportation solutions for full loads, shared cargo, and oversized freight across India.',
       image: 'https://images.unsplash.com/photo-1766561993246-c021a9110166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MHx8fHwxNzcxNzQ5Mjc4fDA&ixlib=rb-4.1.0&q=85',
     },
     {
