@@ -3,7 +3,7 @@ import { FileText } from 'lucide-react';
 import axios from 'axios';
 import { toast } from 'sonner';
 
-const BACKEND_URL = https://cubiclogistics.onrender.com;
+const BACKEND_URL = 'https://cubiclogistics.onrender.com';
 const API = `${BACKEND_URL}/api`;
 
 export default function Quote() {
