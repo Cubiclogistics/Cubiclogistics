@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cubiclogistics.in/sitemap.xml
+Sitemap: https://cubiclogistics.in/sitemap.xml
